@@ -1,0 +1,8 @@
+<div class=<%= content %>>
+  <h2><%= @counter %>. <%= @item.title %></h2>
+  <h4><%=  number_to_currency(@item.price, :unit => "€") %></h4>
+  <h4><%= @item.location %></h4>
+  <%= render(DiscountComponent.new(item: @item)) %>
+  <%= EnrolleeComponent.new.total_enrollees(@item) %>
+  <p><a href='#'> <%= @notice %> </a></p>
+</div>
