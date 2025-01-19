@@ -1,0 +1,9 @@
+<div>
+  <h1 class="text-xl font-bold">Messages</h1>
+
+  <div class="max-w-2xl">
+    <%= render MessageComponent.with_collection(@messages) %>
+  </div>
+  
+  <%= render "form" %>
+<div>
