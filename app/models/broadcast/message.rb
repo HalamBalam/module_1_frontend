@@ -23,7 +23,7 @@ module Broadcast
     def rendered_component
       ApplicationController.render(
         MessageComponent.new(message: message),
-        layout: true
+        layout: false
       )
     end
   end
