@@ -1,0 +1,14 @@
+<main class="container">
+  <div class="max-w-2xl">
+    <h1 class="text-2xl font-bold my-5">Quotes</h1>
+    <%= link_to "New quote (Turbo)",
+                new_quote_path,
+                class: "p-2 cursor-pointer hover:bg-green-600" %>
+    <%= link_to "New quote",
+                new_quote_path,
+                class: "p-2 cursor-pointer hover:bg-green-600",
+                data: { turbo: false } %>
+  </div>
+
+  <%= render @quotes %>
+</main>
