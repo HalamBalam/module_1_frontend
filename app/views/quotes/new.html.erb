@@ -1,0 +1,15 @@
+<main class="mb-7">
+  <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
+
+  <div class="font-bold text-xl">
+    <h1>New quote</h1>
+  </div>
+
+  <div class="mt-4">
+    <%= render "turbo_form", quote: @quote %>
+  </div>
+
+  <div class="mt-4">
+    <%= render "form", quote: @quote %>
+  </div>
+</main>
